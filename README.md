@@ -25,6 +25,12 @@ sudo apt-get update
 sudo apt-get install libadns1-dev
 ```
 
+To compile:-
+
+```
+gcc main.c -o main -ladns && ./main
+```
+
 ## macOS
 
 If you don't have homebrew, run the following command:-
@@ -42,5 +48,5 @@ brew install adns
 To compile:-
 
 ```
-gcc main.c -o main -ladns && ./main
+gcc main.c -o dns_resolver -I/opt/homebrew/include -L/opt/homebrew/lib -ladns
 ```
