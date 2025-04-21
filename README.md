@@ -48,5 +48,11 @@ brew install adns
 To compile:-
 
 ```
-gcc main.c -o dns_resolver -I/opt/homebrew/include -L/opt/homebrew/lib -ladns
+gcc main.c -o main -ladns && ./main
+```
+
+If your system cannot find the adns header file for the linker, run the following command:-
+
+```
+gcc main.c -o dns_resolver -I/opt/homebrew/include -L/opt/homebrew/lib -ladns && ./dns_resolver
 ```
