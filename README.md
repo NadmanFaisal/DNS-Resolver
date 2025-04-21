@@ -16,11 +16,27 @@ A simple C program that uses the GNNU adns library to resolve both IPv4 and IPv6
 - GCC (or any C compiler)
 - `libadns` (Advanced DNS client library)
 
-# Installation (Debian/Ubuntu)
+# Installation
+
+## Linux
 
 ```
 sudo apt-get update
 sudo apt-get install libadns1-dev
+```
+
+## macOS
+
+If you don't have homebrew, run the following command:-
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then write the following command to install GNU adns lib:-
+
+```
+brew install adns
 ```
 
 To compile:-
